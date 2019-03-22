@@ -1,0 +1,21 @@
+$id: https://wadcher.eu/ns/schemas/rulesets.json
+$schema: http://json-schema.org/draft-07/schema#
+definitions: {}
+properties:
+  rulesets:
+    $id: '#/properties/rulesets'
+    items:
+      $id: '#/properties/rulesets/items'
+      default: https://imergo.com/ns/compliance/wcag21#
+      examples:
+      - https://imergo.com/ns/compliance/wcag20#
+      - https://imergo.com/ns/compliance/wcag21#
+      format: uri
+      title: A ruleset
+      type: string
+    title: Array of Rulesets
+    type: array
+required:
+- rulesets
+title: The WADcher Rulesets Schema
+type: object
