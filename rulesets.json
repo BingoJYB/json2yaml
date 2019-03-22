@@ -1,0 +1,28 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://wadcher.eu/ns/schemas/rulesets.json",
+    "type": "object",
+    "title": "The WADcher Rulesets Schema",
+    "required": [
+        "rulesets"
+    ],
+    "properties": {
+        "rulesets": {
+            "$id": "#/properties/rulesets",
+            "type": "array",
+            "title": "Array of Rulesets",
+            "items": {
+                "$id": "#/properties/rulesets/items",
+                "type": "string",
+                "title": "A ruleset",
+                "default": "https://imergo.com/ns/compliance/wcag21#",
+                "examples": [
+                    "https://imergo.com/ns/compliance/wcag20#",
+                    "https://imergo.com/ns/compliance/wcag21#"
+                ],
+                "format": "uri"
+            }
+        }
+    }
+}
